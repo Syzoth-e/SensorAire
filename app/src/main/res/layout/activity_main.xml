@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorBackground">
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="230dp">
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@drawable/input_text"
+            android:hint="@string/correo"
+            android:textColorHint="#959595"
+            android:textColor="@color/colorPurple"
+            android:paddingLeft="10dp"
+            android:inputType="textEmailAddress"
+            />
+
+        <EditText
+
+            android:layout_marginTop="25dp"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@drawable/input_text"
+            android:hint="@string/contrasena"
+            android:textColorHint="#959595"
+            android:textColor="@color/colorPurple"
+            android:paddingLeft="10dp"
+            android:inputType="textPassword"
+            />
+
+        <Button
+            android:id="@+id/btnIngresar"
+            android:layout_marginTop="55dp"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_solid"
+            android:text="Entrar"
+            android:textColor="@color/colorTextPrimary"
+            />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+
+            android:textColor="@color/colorTextPrimary"
+            />
+        <Button
+            android:id="@+id/btnCrear"
+            android:layout_marginTop="15dp"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_outline"
+            android:text="Crear Cuenta"
+            android:textColor="@color/colorTextPrimary"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
